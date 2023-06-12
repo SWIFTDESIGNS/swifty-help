@@ -1,0 +1,424 @@
+@import url('res/futurastd-medium.css');
+
+/*color of every text. */
+* {
+	color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+@keyframes load-scale {
+    from {margin-right: 0%;}
+    from {opacity: 0%;}
+}
+
+@keyframes side-scale {
+    from {width: 0%;}
+}
+
+@keyframes info-scale {
+    from {height: 0%;}
+}
+
+@keyframes content-slide {
+    from {opacity: 0;}
+}
+
+
+#menucreate {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background.png);
+    animation-name: load-scale;
+    animation-duration: 1s;
+}
+
+#main-objects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 3%;
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    position: relative;
+    padding: 0%;
+    top: 10%;
+    overflow: scroll;
+    overflow-x: hidden;
+    animation-name: side-scale;
+    animation-duration: 1s;
+}
+
+#discord {
+    width: 45px;
+    height: 45px;
+    margin: 0 1px; 
+    margin-top: 2%;
+    border-radius: 25px;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    left: 47%;
+    top: 7%;
+}
+#tebex {
+    width: 45px;
+    height: 45px;
+    margin: 0 1px; 
+    margin-top: 2%;
+    border-radius: 25px;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: 7%;
+}
+#website {
+    width: 45px;
+    height: 45px;
+    margin: 0 1px; 
+    margin-top: 2%;
+    border-radius: 25px;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    left: 53%;
+    top: 7%;
+}
+
+.out-buttons:hover {
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 2px 15px -3px rgb(255, 255, 255);
+}
+
+.items-grid {
+    position: relative;
+    top: 35px;
+    left: 27px;
+    width: 200px;
+    height: 220px;
+    border-radius: 5px;
+    background-color: rgba(65, 65, 65, 0.87);
+}
+
+.items-grid:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 24px -3px rgb(0, 0, 0);
+}
+
+#icons {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+}
+
+.text-grid {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+    font-size:20px;
+    text-align: center;
+}
+
+.t-header {
+    background-color: rgba(17, 17, 17, 0.651);
+    width: 100%;
+    height: 100px ;
+    text-align: center;
+    box-shadow: 0px 2px 24px -3px rgb(0, 0, 0);
+}
+
+#title {
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-size: 45px;
+    top: 28%;
+    
+}
+
+.sn {
+    margin-top: 1.8%;
+    color: rgb(112, 110, 110);
+    text-align: center;
+}
+
+.left-logo {
+    padding-top: 9px;
+    width: 4%;
+    position: absolute;
+    left: 2%;
+}
+
+
+
+/*Button designs*/
+#faq:hover {
+    -webkit-box-shadow: 0px 1px 20px -5px rgba(255,162,0,1);
+    -moz-box-shadow: 0px 1px 20px -5px rgba(255,162,0,1);
+    box-shadow: 0px 1px 20px -5px rgba(255,162,0,1);
+}
+
+#rules:hover {
+    -webkit-box-shadow:  0px 1px 20px -5px rgba(157,0,255,1);
+    -moz-box-shadow:  0px 1px 20px -5px rgba(157,0,255,1);
+    box-shadow:  0px 1px 20px -5px rgba(157,0,255,1);
+}
+
+#gangs:hover {
+    -webkit-box-shadow:  0px 1px 20px -5px rgba(255,0,0,1);
+    -moz-box-shadow:  0px 1px 20px -5px rgba(255,0,0,1);
+    box-shadow:  0px 1px 20px -5px rgba(255,0,0,1);  
+}
+
+#rs:hover {
+    -webkit-box-shadow:  0px 1px 20px -5px rgba(255,251,126,1);
+    -moz-box-shadow:  0px 1px 20px -5px rgba(255,251,126,1);
+    box-shadow:  0px 1px 20px -5px rgba(255,251,126,1); 
+}
+
+#jobs:hover {
+    -webkit-box-shadow:  0px 1px 20px -5px rgb(0, 255, 0);
+    -moz-box-shadow:  0px 1px 20px -5px rgba(0, 255, 0);
+    box-shadow:  0px 1px 20px -5px rgba(0, 255, 0);
+}
+
+#phone:hover {
+    -webkit-box-shadow:  0px 1px 20px -5px rgba(6,182,255,1);
+    -moz-box-shadow:  0px 1px 20px -5px rgba(6,182,255,1);
+    box-shadow:  0px 1px 20px -5px rgba(6,182,255,1);  
+}
+
+/* Tab designs*/
+
+/*faq tab */
+.ft-d {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 9px;
+    animation-name: info-scale;
+    animation-duration: 1s;
+}
+/*orgs tab */
+.rules-d {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 4px;
+    animation-name: info-scale;
+    animation-duration: 1s;
+}
+/*gangs tab */
+.g-d {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 4px;
+    animation-name: info-scale;
+    animation-duration: 1s;
+}
+/*Real estate tab */
+.rs-d {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 4px;
+    animation-name: info-scale;
+    animation-duration: 1s;
+}
+/*Jobs tab */
+.j-d {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 4px;
+    animation-name: info-scale;
+    animation-duration: 1s;
+}
+/*Phone tab */
+.ph-d { 
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 4px;
+    animation-name: info-scale;
+    animation-duration: 1s;
+}
+
+
+.tab-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#btdBtn {
+    position: relative;
+    font-size: 25px;
+    margin-top: -3%;
+    margin-left: 71%;
+
+}
+
+#btdBtn:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    color: red;
+}
+
+.tab-container {
+    position: inherit;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    border-radius: 5px;
+    margin: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: transparent;
+    width: 95%;
+    height: 93%;
+}
+
+.collapsible {
+    position: inherit;
+    background-color: #ffffff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    margin: auto;
+    margin-top: 19px;
+    font-weight: bold;
+    margin-left: 25%;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+
+  a {
+    text-align: center;
+    background-color: #272727;
+    position: relative;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 5px;
+    left: 39%;
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #1093c7;
+    cursor: pointer;
+  }
+
+  p {
+    text-align: center;
+  }
+  
+.content {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 9px;
+    display: none;
+    overflow: hidden;
+    background-color: #252525da;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    animation-name: content-slide;
+    animation-duration: 1s;
+  }
+
+.rules-content {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 50%;
+    height: auto;
+    padding-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: #252525da;
+    border-radius: 5px;
+    animation-name: content-slide;
+    animation-duration: 1s;
+}
+
+  .add-picture {
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    width: 78%;
+    height: 40%;
+    border-radius: 15px;
+  }
+  
+
+  footer {
+    margin-top: -20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
+
+
+
+

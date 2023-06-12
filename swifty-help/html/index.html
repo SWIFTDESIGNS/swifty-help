@@ -1,0 +1,491 @@
+<html>
+<head>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/23de400b07.js" crossorigin="anonymous"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="./listener.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="menucreate">
+        <div class="t-header">
+            <img class="left-logo" src="images/left-logo.png">
+            <i class="fa-fade" id="title">Hand Book</i>
+            <h1 class="sn" id="sname">Server-Name</h1>
+        </div>
+        <img class="out-buttons" id="discord" src="images/buttons/discord.png">
+        <img class="out-buttons" id="tebex" src="images/buttons/tebex.png">
+        <img class="out-buttons" id="website" src="images/buttons/website.png">
+
+         <p id="description" style="text-align: center; margin-top: 5%; color: rgb(189, 188, 188);"> This menu is to discuss the main points within the city & to help you understand certain things in game and how to use them to the full extent.<br>
+        Everything you have a question about should be here, if it isn't then please let us know what else we should add to this section to help you out.</p>
+         <div class="dashboard-items" id="main-objects">
+            <div class="items-grid" onclick="faqinfo()" id="faq" style="background-image: url(images/buttons/faq.png);">
+            </div>
+            <div class="items-grid" onclick="rulesinfo()" id="rules" style="background-image: url(images/buttons/rules.png);">
+            </div>
+            <div class="items-grid" onclick="gangsinfo()" id="gangs" style="background-image: url(images/buttons/gangs.png);">
+            </div>
+            <div class="items-grid" onclick="rsinfo()" id="rs" style="background-image: url(images/buttons/realestate.png);">
+            </div>
+            <div class="items-grid" onclick="jinfo()" id="jobs" style="background-image: url(images/buttons/jobs.png);">
+            </div>
+            <div class="items-grid" onclick="phinfo()" id="phone" style="background-image: url(images/buttons/phone.png);">
+            </div>
+         </div>
+
+         <!--FAQ TAB-->
+         <div class="ft-d" id="faq-tab" style="display: none;">
+            <h1 class="tab-title">FAQ</h1>
+            <i class="fa-regular fa-circle-left fa-shake" onclick="dashboard()" id="btdBtn"></i>
+            <div class="tab-container">
+                <button id="coll" type="button" class="collapsible">What is your Discord ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can find our a direct link to our discord by clicking the discord icon at the top of the menu.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do i get to your tabex ?</button>
+                <div class="content">
+                        <br>
+                        <p>Our tabex will be where you can purchase custom mlos, custom businesses and more, so head on over !</p>
+                        <a>tebex</a>
+                </div>
+                <button id="coll" type="button" class="collapsible">Where can i get guns ?</button>
+                <div class="content">
+                        <br>
+                        <p>There will be a blip on your map if you click [ESC] then goto [MAP] and you will see a blip of weapons. 
+                            Also on the left you will see the names on the right side inside the map saying [Ammunation]</p>
+
+                </div>
+                <button id="coll" type="button" class="collapsible">How do i get my driverse license ?</button>
+                <div class="content">
+                        <br>
+                        <p>Start with heading to postal [140] then you will see a guy looking so this guy down below.</p>
+                        <img class="add-picture" src="https://media.discordapp.net/attachments/1085393654258077737/1089432868352176148/image.png?width=1440&height=612">
+                        <p>Then flex your [E] muscle and proceed.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">What are some common commands used in city ?</button>
+                <div class="content">
+                        <br>
+                        <p> Some common commands used on FiveM QBcore servers include /me, 
+                            which allows you to perform an action in-character, and /do, which allows you to describe the outcome of an action.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I access the inventory in city ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can access your inventory on a FiveM QBcore server by pressing the "F2" key or using the /inventory command. </p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I become a police officer ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can become a police officer in city by applying on the server's website,discord or speaking with an admin in-game.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">What is the purpose of the /ooc command ?</button>
+                <div class="content">
+                        <br>
+                        <p>The /ooc command is used to communicate out of character, typically for asking questions or addressing technical issues.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I change my character's appearance ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can change your character's appearance on a FiveM QBcore server by visiting a clothing store</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I access the bank ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can access the bank by visiting an ATM or view your bank by doing /bank or opening the app on your phone.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I report a player ?</button>
+                <div class="content">
+                        <br>
+                        <p> You can report a player by using the /report command or contacting a staff member.</p>
+                </div>
+                <!-- To add more buttons use this template
+                <button id="coll" type="button" class="collapsible">Question</button>
+                <div class="content">
+                        <br>
+                        <p>Answer</p>
+                </div>
+                -->
+            </div>
+         </div>
+
+         <!--RULES TAB-->
+         <div class="rules-d" id="rule-tab" style="display: none;">
+            <h1 class="tab-title">Rules</h1>
+            <i class="fa-regular fa-circle-left fa-shake" onclick="dashboard()" id="btdBtn"></i>
+            <div class="tab-container">
+                <div class="rules-content">
+                        <br>
+                        <p>1. No exploiting, hacking, or cheating of any kind is allowed.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>2. Respect all players and staff members, regardless of their race, gender, or beliefs.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>3. Do not harass, threaten, or bully other players on the server.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>4. Do not spam chat or use excessive caps.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>5. Roleplay is mandatory at all times.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>6. Use of any third-party software that gives an unfair advantage is prohibited.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>7. Do not use offensive language, including racial slurs, derogatory terms, or hate speech.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>8. Do not use any form of discrimination or harassment towards other players.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>9. Do not impersonate staff members or other players.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>10. No griefing, trolling, or intentional destruction of other players' property is allowed.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>11. Do not engage in any form of meta-gaming, power-gaming, or fail-roleplaying.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>12. Do not use any glitches or bugs to gain an unfair advantage over other players.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>13. Do not engage in any form of explicit sexual content or behavior.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>14. Do not use any form of modding or scripting that alters the game mechanics or disrupts the server.</p>
+                </div>
+                <div class="rules-content">
+                        <br>
+                        <p>15. Do not advertise other servers or communities on the server.</p>
+                </div>
+                <!-- To add more buttons use this template
+                <div class="rules-content">
+                        <br>
+                        <p>10. No griefing, trolling, or intentional destruction of other players' property is allowed.</p>
+                </div>
+                -->
+            </div>
+         </div>
+
+         <!--GANGS TAB-->
+         <div class="g-d" id="gangs-tab" style="display: none;">
+            <h1 class="tab-title">Gangs</h1>
+            <i class="fa-regular fa-circle-left fa-shake" onclick="dashboard()" id="btdBtn"></i>
+            <div class="tab-container">
+                <button id="coll" type="button" class="collapsible">Discord</button>
+                <div class="content">
+                        <br>
+                        <p>To get the most help and support please join our discord, here you will find everything you are looking for</p>
+                        <a>discord.gg/fvrrp</a>
+                </div>
+                <button id="coll" type="button" class="collapsible"></button>
+                <div class="content">
+                        <br>
+                        <p></p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I join a gang  ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can join a gang on a FiveM QBcore server by speaking with a gang member or leader in-game and following their instructions.</p>
+                            
+                </div>
+                <button id="coll" type="button" class="collapsible"> ?</button>
+                <div class="content">
+                        <br>
+                        <p></p>
+                </div>
+                <!-- To add more buttons use this template
+                <button id="coll" type="button" class="collapsible">Question</button>
+                <div class="content">
+                        <br>
+                        <p>Answer</p>
+                </div>
+                -->
+            </div>
+         </div>
+
+         <!--REAL-ESTATE TAB-->
+         <div class="rs-d" id="realestate-tab" style="display: none;">
+            <h1 class="tab-title">Real Estate</h1>
+            <i class="fa-regular fa-circle-left fa-shake" onclick="dashboard()" id="btdBtn"></i>
+            <div class="tab-container">
+                <button id="coll" type="button" class="collapsible"> How do I find available real estate ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can use the /realestate command to view all available properties for sale or rent. 
+                        The command will provide a list of available properties and their prices. Or keep an eye on social media.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I purchase a property?</button>
+                <div class="content">
+                        <br>
+                        <p> Once you have found a property you are interested in, use the /buyproperty command followed by the property ID to purchase it. 
+                        You must have enough money in your bank account to complete the purchase. Every city is not the same.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Can I rent a property instead of purchasing it ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, some properties may be available for rent instead of purchase. Check the property listing or speak with a real estate agent 
+                        to see if renting is an option.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible"> How do I sell a property that I own ?</button>
+                <div class="content">
+                        <br>
+                        <p>Use the /sellproperty command followed by the property ID to sell your property. You will receive the sale price directly to your bank account.
+                        Every city is not the same.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible"> Can I own multiple properties at the same time ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, you can own multiple properties at the same time as long as you have enough money to purchase them. While checking that the city allows you too.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Can I share my property with other players ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, you can give other players access to your property by using the /propertyshare command followed by the player's ID. 
+                        They will be able to access your property as long as you have given them permission. Contact a staff member if you are not sure or its not working.</p>
+                </div>
+                <!-- To add more buttons use this template
+                <button id="coll" type="button" class="collapsible">Question</button>
+                <div class="content">
+                        <br>
+                        <p>Answer</p>
+                </div>
+                -->
+            </div>
+         </div>
+
+         <!--JOBS TAB-->
+         <div class="j-d" id="jobs-tab" style="display: none;">
+            <h1 class="tab-title">Jobs</h1>
+            <i class="fa-regular fa-circle-left fa-shake" onclick="dashboard()" id="btdBtn"></i>
+            <div class="tab-container">
+                <button id="coll" type="button" class="collapsible">Where do i get a job ?</button>
+                <div class="content">
+                        <br>
+                        <p>For public jobs you can find one by going to Alta street and you will see a building like so.</p>
+                        <img class="add-picture" src="https://media.discordapp.net/attachments/1085393654258077737/1089429137908826162/image.png">
+                        <p> 382 <br>
+                            There you will find the jobs you are able to get without applying otherwise you will need to register in discord.
+                            The second way is when someone posts on twitter they are hiring make sure you are watching.
+                        </p>
+                </div>
+                <button id="coll" type="button" class="collapsible"> How do I apply for a job ?</button>
+                <div class="content">
+                        <br>
+                        <p>To apply for a job, go to the job center or speak with an NPC for the desired job. Follow the on-screen prompts to fill out an application 
+                        and complete any required tests or training.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible"> What jobs are available on this server ?</button>
+                <div class="content">
+                        <br>
+                        <p>There are a variety of jobs available, including police officer, mechanic, delivery driver, and more. You can check the job center or speak
+                        with an NPC to see all available jobs.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Are there any job requirements ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, some jobs may require certain skills or qualifications, such as a driver's license or previous experience in a related field. Check 
+                        the job description for specific requirements.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How often do job openings become available ?</button>
+                <div class="content">
+                        <br>
+                        <p>Job openings can vary depending on player demand and server settings. Check the job center or speak with an NPC regularly to stay 
+                        up-to-date on new job openings.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible"> Can I have multiple jobs at the same time?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, you can have multiple jobs at the same time, as long as they don't conflict with each other.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I advance in my job ?</button>
+                <div class="content">
+                        <br>
+                        <p>Advancement opportunities vary by job, but generally involve gaining experience, completing tasks or objectives, and demonstrating good performance.
+                        Check with your supervisor or the job center for specific advancement opportunities.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Can I lose my job ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, you can lose your job for a variety of reasons, including breaking server rules, not meeting job requirements, or poor performance.
+                        Check with your supervisor or the job center for specific job rules and requirements.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Are there any benefits to having a job ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, having a job can provide a steady source of income and opportunities for advancement and skill development. Some jobs may also come with additional benefits,
+                        such as access to exclusive vehicles or equipment.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Can I switch jobs if I am not happy with my current one ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, you can switch jobs at any time by resigning from your current job and applying for a new one. Keep in mind that some jobs may have a cooldown period before you can reapply.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I know if a job is currently hiring ?</button>
+                <div class="content">
+                        <br>
+                        <p>Check the job center or speak with an NPC to see if a job is currently hiring. Job postings will typically indicate whether the job is currently accepting applications.
+                        Also keep an eye out on social media for any openings.
+                        </p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Can I start my own business or company ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, some servers may offer the ability to start your own business or company. Check with server admins or the job center for more information.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I report a problem with my job or supervisor ?</button>
+                <div class="content">
+                        <br>
+                        <p>If you have an issue with your job or supervisor, speak with another supervisor or an admin. They can assist you with resolving the issue and may be able to provide guidance or support.</p>
+                </div>
+                <!-- To add more buttons use this template
+                <button id="coll" type="button" class="collapsible">Question</button>
+                <div class="content">
+                        <br>
+                        <p>Answer</p>
+                </div>
+                -->
+            </div>
+         </div>
+
+         <!--PHONE TAB-->
+         <div class="ph-d" id="phone-tab" style="display: none;">
+            <h1 class="tab-title">Phone</h1>
+            <i class="fa-regular fa-circle-left fa-shake" onclick="dashboard()" id="btdBtn"></i>
+            <div class="tab-container">
+                <button id="coll" type="button" class="collapsible">How do i set up my phone ?</button>
+                <div class="content">
+                        <br>
+                        <p>When you first load into the city you will have a phone on your person, now to use this phone you will need to
+                            flex you [M] muscle and follow the installation witch will take you through a 45 second setup or so.
+                        </p>
+                </div>
+                <button id="coll" type="button" class="collapsible">I don't see twitter or Instagram</button>
+                <div class="content" style="overflow-x: hidden; overflow-y: scroll; height: 385px;">
+                        <br>
+                        <p>You will find that these apps require a installation. Start by flexing [M] to open your phone then navigate the the AppStore witch looks like this.</p>
+                        <br>
+                        <p>After clicking the app you will be presented with multiple apps<br>by scrolling down you will see the apps you can install.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I make a phone call ?</button>
+                <div class="content">
+                        <br>
+                        <p>Use the phone menu to select the 'Call' option, then enter the phone number you wish to call. You can also use the 'Recent' tab to quickly call a recently contacted number.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I send a text message ?</button>
+                <div class="content">
+                        <br>
+                        <p>Use the phone menu to select the 'Messages' option, then choose 'New Message' to create a new message. Enter the phone number or contact name of the recipient, type your message, and hit send.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">How do I add or remove contacts from my phone ?</button>
+                <div class="content">
+                        <br>
+                        <p>Use the phone menu to select the 'Contacts' option, then choose 'New Contact' to create a new contact. You can also select an existing contact and choose 'Delete' to remove them from your phone.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible">Can I access my bank account through my phone ?</button>
+                <div class="content">
+                        <br>
+                        <p>Yes, you can use the phone menu to access your bank account and perform various transactions, such as depositing or withdrawing money.</p>
+                </div>
+                <button id="coll" type="button" class="collapsible"> How do I turn off my phone ?</button>
+                <div class="content">
+                        <br>
+                        <p>You can turn off your phone by pressing the 'M' key. This will also exit the phone menu if it is currently open.</p>
+                </div>
+                <!-- To add more buttons use this template
+                <button id="coll" type="button" class="collapsible">Question</button>
+                <div class="content">
+                        <br>
+                        <p>Answer</p>
+                </div>
+                -->
+            </div>
+         </div>
+    </div>
+            <footer><i class="fa-solid fa-circle-info fa-bounce"></i> You believe something else should be on here ?. Well join our discord and let us know by creating a ticket.</footer>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        function dashboard() {
+            document.getElementById('faq-tab').style.display = "none"
+            document.getElementById('rule-tab').style.display = "none"
+            document.getElementById('gangs-tab').style.display = "none"
+            document.getElementById('realestate-tab').style.display = "none"
+            document.getElementById('jobs-tab').style.display = "none"
+            document.getElementById('phone-tab').style.display = "none"
+            document.getElementById('main-objects').style.display = "grid"
+            
+        }
+
+        function faqinfo() {
+            document.getElementById('main-objects').style.display = "none"
+            document.getElementById('faq-tab').style.display = "block"
+        }
+
+        function rulesinfo() {
+            document.getElementById('main-objects').style.display = "none"
+            document.getElementById('rule-tab').style.display = "block"
+        }
+
+        function gangsinfo() {
+            document.getElementById('main-objects').style.display = "none"
+            document.getElementById('gangs-tab').style.display = "block"
+        }
+
+        function rsinfo() {
+            document.getElementById('main-objects').style.display = "none"
+            document.getElementById('realestate-tab').style.display = "block"
+        }
+        
+        function jinfo() {
+            document.getElementById('main-objects').style.display = "none"
+            document.getElementById('jobs-tab').style.display = "block"
+        }
+
+        function phinfo() {
+            document.getElementById('main-objects').style.display = "none"
+            document.getElementById('phone-tab').style.display = "block"
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        var other = document.getElementById('coll');
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            other.style.borderBottomLeftRadius = "3px";
+            other.style.borderBottomRightRadius = "3px";
+        } else {
+            content.style.display = "block";
+            other.style.borderBottomLeftRadius = "0px";
+            other.style.borderBottomRightRadius = "0px";
+        }
+        });
+}
+    </script>
+
+</body>
+
+</html>
