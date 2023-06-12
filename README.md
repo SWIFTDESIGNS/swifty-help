@@ -29,3 +29,10 @@ To add more rules or questions to the ui you can do so by going to the (html/ind
 
 #Changing the logo or button images
 To change the logo on the menu or the button images you can do so by going to your html folder within the swifty-help folder and open the images folder witch will home the images you can change, with this being said you must keep the names of the png's the same for them to change smoothly.
+
+#Images
+![swifty-help-image-1](https://github.com/SWIFTDESIGNS/swifty-help/assets/57051852/d4e9859d-4f1a-405a-814a-ec3871586f5d)
+
+![swifty-help-image-2](https://github.com/SWIFTDESIGNS/swifty-help/assets/57051852/7cba61fa-b68e-4825-9494-913b3dc53d0e)
+
+![swifty-help-image-3](https://github.com/SWIFTDESIGNS/swifty-help/assets/57051852/15b33406-07ae-4819-8e8e-950b05df5d15)
