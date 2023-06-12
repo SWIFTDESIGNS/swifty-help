@@ -24,3 +24,6 @@ HM.Bind = true               -- false will disable the keybind feature
 HM.keybind = 'F9'            -- If you would like to change the keybind key this is where you do it
 
 To add more rules or questions to the ui you can do so by going to the (html/index.html) and scroll down and you will find templates withing the html on how to add more to each tab.
+
+#Changing the logo or button images
+To change the logo on the menu or the button images you can do so by going to your html folder within the swifty-help folder and open the images folder witch will home the images you can change, with this being said you must keep the names of the png's the same for them to change smoothly.
