@@ -43,12 +43,12 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     row-gap: 3%;
-    width: 40%;
-    height: 60%;
+    width: 50%;
+    height: 70%;
     margin: auto;
     position: relative;
     padding: 0%;
-    top: 10%;
+    top: 0%;
     overflow: scroll;
     overflow-x: hidden;
     animation-name: side-scale;
