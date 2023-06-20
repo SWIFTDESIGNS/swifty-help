@@ -30,6 +30,11 @@ SendNUIMessage({
     status = bool,
 })
 
+--user TriggerEvent('swiftyhelp:openmenu') in other scripts to open the menu
+RegisterNetEvent('swiftyhelp:openmenu', function ()
+    SetDisplay(not display)
+end)
+
 CreateThread(function()
     while true do
         Wait(0)
