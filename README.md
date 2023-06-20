@@ -11,6 +11,8 @@ Discord: https://discord.gg/sjAwVPT2zp
 
 You will want to download the latest version of Swifty-Help and then drag the folder out of the .zip and then add to your resources and from there you can ensure it by doing (ensure swifty-help) in your server.cfg.
 
+use TriggerEvent('swiftyhelp:openmenu') in other scripts to open the menu
+
 Everything you can change will be withing the Menu_config.lua, from there you have a thew options witch are labeled like so.
 --Edit below here
 HM.discord = 'https://discord.gg/sjAwVPT2zp'     --Discord link                            
