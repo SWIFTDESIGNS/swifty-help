@@ -1,4 +1,3 @@
-QBCore = exports['qb-core']:GetCoreObject()
 
 --NUI
 local display = false
