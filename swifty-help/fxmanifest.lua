@@ -11,8 +11,7 @@ dependencies {
 }
 
 shared_script {
-    'Menu_config.lua',
-    '@qb-core/shared/locale.lua'
+    'Menu_config.lua'
 }
 
 client_script {
